@@ -1,11 +1,111 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-HK">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My GitHub Pages Site</title>
+    <title>Everknight GIF | 靜態頁面</title>
+    <meta name="description" content="HSR Star Rail Everknight GIF 靜態展示頁" />
+    <style>
+      :root {
+        color-scheme: dark light;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #0f1115;
+        color: #e6e6e6;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "PingFang HK", "Microsoft JhengHei", sans-serif;
+      }
+      .wrap {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .card {
+        width: min(960px, 100%);
+        border-radius: 16px;
+        background: #151823;
+        box-shadow: 0 12px 40px rgba(0,0,0,.35);
+        border: 1px solid #232633;
+        overflow: hidden;
+      }
+      header {
+        padding: 16px 20px;
+        border-bottom: 1px solid #232633;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      header h1 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: .2px;
+      }
+      .content {
+        padding: 0;
+      }
+      footer {
+        padding: 14px 20px;
+        border-top: 1px solid #232633;
+        font-size: 12px;
+        color: #a8b0c0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #c7d2ff;
+        text-decoration: none;
+        font-weight: 600;
+        background: #22273a;
+        border: 1px solid #2c3250;
+        padding: 8px 12px;
+        border-radius: 10px;
+      }
+      .btn:hover { background: #283156; }
+      /* Keep Tenor responsive */
+      .tenor-gif-embed { width: 100%; max-width: 100%; }
+    </style>
   </head>
   <body>
-    <h1>Hello GitHub Pages!</h1>
+    <div class="wrap">
+      <main class="card" role="main" aria-labelledby="title">
+        <header>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.9L18.18 22 12 18.8 5.82 22 7 14.17l-5-4.9 6.91-1.01L12 2z" fill="#c7d2ff"/>
+          </svg>
+          <h1 id="title">Everknight | Honkai: Star Rail GIF</h1>
+        </header>
+
+        <section class="content" aria-label="GIF 內容">
+          <!-- Tenor embed for the requested GIF -->
+          <div class="tenor-gif-embed"
+               data-postid="8150170169450611599"
+               data-share-method="host"
+               data-width="100%"
+               data-aspect-ratio="1.7777777778">
+            <a href="https://tenor.com/zh-TW/view/everknight-evernight-ever-night-hsr-star-rail-gif-8150170169450611599">
+              查看 GIF 來源
+            </a>
+          </div>
+          <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </section>
+
+        <footer>
+          <span>來源：Tenor</span>
+          <a class="btn" href="https://tenor.com/zh-TW/view/everknight-evernight-ever-night-hsr-star-rail-gif-8150170169450611599" rel="noopener" target="_blank">
+            前往原連結
+          </a>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
